@@ -1,0 +1,13 @@
+package javaproject;
+
+public class Natrualnum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+             int n=10;
+             int sum=n*(n+1)/2;
+             System.out.println("sum of first N natural numbers:"+n);
+             System.out.println("the sum of 1st "+n+"natural numbers is:"+sum);
+	}
+
+}
