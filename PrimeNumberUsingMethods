@@ -1,0 +1,21 @@
+package javaproject;
+import java.util.Scanner;
+public class Primenumber{
+public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+System.out.println("enter number");
+int n=sc.nextInt();
+String value =Primenumber.primenumberfinder(n);
+System.out.println(value);
+}
+public static String primenumberfinder(int n) {
+	int i=2;
+	while (i<=n-1) {
+		if(n%i==0) {
+			return "not prime";
+		}
+		else
+			i++;}
+			return "prime";
+	}}
