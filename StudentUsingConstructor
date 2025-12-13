@@ -1,0 +1,36 @@
+public class Student {
+    private int id;
+    private String firstName;
+    private String lastName;
+    private double fee;
+
+    // Constructor matching the usage: new Student(101, "Alice", "Smith", 1500.50)
+    public Student(int id, String firstName, String lastName, double fee) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.fee = fee;
+    }
+
+    // Getter methods matching the usage: student1.getId(), student1.getName(), student1.getFee()
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        // Assuming "Name" means "firstName + ' ' + lastName"
+        return firstName + " " + lastName; 
+    }
+
+    public double getFee() {
+        return fee;
+    }
+
+    // Custom method matching the usage: student2.printDetails()
+    public void printDetails() {
+        System.out.println("ID: " + this.id);
+        System.out.println("First Name: " + this.firstName);
+        System.out.println("Last Name: " + this.lastName);
+        System.out.println("Fee: $" + String.format("%.2f", this.fee));
+    }
+}
