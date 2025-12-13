@@ -1,0 +1,26 @@
+package javaproject;
+
+public class SixGreaterOrNot {
+	 
+	public static String GreaterDemo(){
+		int great=6;
+		int a=3;
+		int b=3;
+		if(a==6||b==6||a+b==6||a-b==6) {
+			return "true";
+		}
+			else{
+				return"false";
+			}
+			
+		}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String value=SixGreaterOrNot.GreaterDemo();
+	System.out.println(value);
+	
+}
+	}
+
+
