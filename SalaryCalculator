@@ -1,0 +1,20 @@
+package javaproject;
+
+public class Salarycalculator {
+
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+		int basic=20000;
+		int hra=5000;
+		int ta=3000;
+		int other=2000;
+		int totalsalary = basic+hra+ta+other;
+		int tax=totalsalary*10/100;
+		int deduction=tax;
+		int netsalary=totalsalary-deduction;
+		System.out.println("total salary:"+totalsalary);
+		System.out.println("tax:"+tax);
+		System.out.println("deduction:"+deduction);
+		System.out.println("net salary:"+netsalary);
+	}}
