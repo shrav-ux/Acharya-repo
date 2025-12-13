@@ -1,0 +1,31 @@
+public class StudentTest {
+    public static void main(String[] args) {
+        System.out.println("Creating three Student objects using the parameterized constructor:\n");
+        
+        // 1. Create the first object
+        Student student1 = new Student(101, "Alice", "Smith", 1500.50);
+        
+        // 2. Create the second object
+        Student student2 = new Student(102, "Bob", "Johnson", 2000.00);
+        
+        // 3. Create the third object
+        Student student3 = new Student(103, "Charlie", "Brown", 1250.75);
+
+        // Print the values (demonstrating method usage)
+        
+        System.out.println("Student 1 Details:");
+        System.out.println("ID: 101");
+        System.out.println("Name (using getName() method): " + student1.getName());
+        System.out.println("Fees (using getFees() method): $" + String.format("%.2f", student1.getFees()));
+        System.out.println("---");
+        
+        System.out.println("\nStudent 2 Details:");
+        // Using the custom printDetails method for a cleaner output
+        student2.printDetails(); 
+        System.out.println("---");
+
+        System.out.println("\nStudent 3 Details:");
+        student3.printDetails();
+        System.out.println("---");
+    }
+}
