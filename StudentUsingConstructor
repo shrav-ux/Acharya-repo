@@ -1,36 +1,49 @@
-public class Student {
-    private int id;
-    private String firstName;
-    private String lastName;
-    private double fee;
+package ArrayPrograms;
+import java.io.*;
+public class StudentConstrutor {
 
-    // Constructor matching the usage: new Student(101, "Alice", "Smith", 1500.50)
-    public Student(int id, String firstName, String lastName, double fee) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.fee = fee;
-    }
+		// TODO Auto-generated method stub
+		
+		    private int id;
+		    private String firstName;
+		    private String lastName;
+		    private double fee;
 
-    // Getter methods matching the usage: student1.getId(), student1.getName(), student1.getFee()
-    public int getId() {
-        return id;
-    }
+		    // Constructor matching the usage: new Student(101, "Alice", "Smith", 1500.50)
+		     StudentConstrutor(int id, String firstName, String lastName, double fee) {
+		        this.id = id;
+		        this.firstName = firstName;
+		        this.lastName = lastName;
+		        this.fee = fee;
+		    }
 
-    public String getName() {
-        // Assuming "Name" means "firstName + ' ' + lastName"
-        return firstName + " " + lastName; 
-    }
+		    // Getter methods matching the usage: student1.getId(), student1.getName(), student1.getFee()
+		    public int getId() {
+		        return id;
+		    }
 
-    public double getFee() {
-        return fee;
-    }
+		    public String getName() {
+		        // Assuming "Name" means "firstName + ' ' + lastName"
+		        return firstName + " " + lastName; 
+		    }
 
-    // Custom method matching the usage: student2.printDetails()
-    public void printDetails() {
-        System.out.println("ID: " + this.id);
-        System.out.println("First Name: " + this.firstName);
-        System.out.println("Last Name: " + this.lastName);
-        System.out.println("Fee: $" + String.format("%.2f", this.fee));
-    }
+		    public double getFee() {
+		        return fee;
+		    }
+
+		    // Custom method matching the usage: student2.printDetails()
+		    public  void  printDetails() {
+		        System.out.println("ID: " + this.id);
+		        System.out.println("First Name: " + this.firstName);
+		        System.out.println("Last Name: " + this.lastName);
+		        System.out.println("Fee: $" + String.format("%.2f", this.fee));
+		    }
+		
+	
+public class Student{
+	public static void main(String args[]) {
+		StudentConstrutor student=new StudentConstrutor(101,"sdfgh","tyu",1500.0);
+		student.printDetails();
+		}
+}
 }
