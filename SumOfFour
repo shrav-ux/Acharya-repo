@@ -1,0 +1,17 @@
+package javaproject;
+
+public class SumOfFour {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int number1=75;
+		int number2=54;
+		int number3=12;
+		int number4=13;
+		int result1=number1+number2;
+		int result2=result1+number3;
+		int sum=result2+number4;
+		System.out.println("sum of numbers"+sum); 
+	}
+
+}
